@@ -1,5 +1,6 @@
 package ai.openfabric.api.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -24,6 +25,7 @@ public class WorkerStatistics extends Datable implements Serializable {
 
     @OneToOne
     @JoinColumn(name = "worker_id")
+    @JsonIgnore
     public Worker workerId;
     public BigDecimal timestamp;
     public BigDecimal cpuUsage;

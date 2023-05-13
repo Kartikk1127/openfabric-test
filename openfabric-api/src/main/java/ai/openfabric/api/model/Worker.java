@@ -1,6 +1,7 @@
 package ai.openfabric.api.model;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -28,6 +29,7 @@ public class Worker extends Datable implements Serializable {
     public String status;
 
     @OneToOne(mappedBy = "workerId")
+    @JsonIgnore
     public WorkerStatistics workerStatistics;
 
 

@@ -46,11 +46,14 @@
 
 
 <!--    worker statistics-->
-    <changeSet id="worker-statistics" author="Kartikey">
-        <createTable tableName="worker-statistics" remarks="Table 2">
+    <changeSet id="worker-statistics-a" author="Kartikey">
+        <createTable tableName="worker_statistics" remarks="Table 2">
             <column name="id" type="${uuid_type}" defaultValueComputed="${uuid_function}">
                 <constraints nullable="false" primaryKey="true"/>
             </column>
+            <column name="created_at" type="DATETIME"/>
+            <column name="updated_at" type="DATETIME"/>
+            <column name="deleted_at" type="DATETIME"/>
             <column name="timestamp" type="DECIMAL"/>
             <column name="cpu_usage" type="DECIMAL"/>
             <column name="memory_usage" type="DECIMAL"/>
@@ -58,9 +61,9 @@
 
         </createTable>
     </changeSet>
-    <changeSet id="worker-statistics-2" author="Kartikey">
+    <changeSet id="worker-statistics-b" author="Kartikey">
         <addForeignKeyConstraint
-                baseTableName="worker-statistics"
+                baseTableName="worker_statistics"
                 baseColumnNames="worker_id"
                 constraintName="fk_worker-statistics_foreign_key"
                 referencedTableName="worker"
