@@ -8987,3 +8987,462 @@ This generated password is for development use only. Your security configuration
 14-05-2023 04:07:09.740 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
 14-05-2023 04:07:09.743 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
 14-05-2023 04:07:09.759 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+14-05-2023 14:16:48.447 [main] INFO  m.p.s.DotenvPropertySource.addToEnvironment - Initializing Dotenv with DotenvConfig{directory=null, filename=null, ignoreIfMalformed=false, ignoreIfMissing=true, systemProperties=false, prefix=null}
+14-05-2023 14:16:48.526 [main] INFO  ai.openfabric.api.Application.logStarting - Starting Application using Java 1.8.0_202 on DESKTOP-71DI563 with PID 10440 (D:\openfabric-test\openfabric-api\build\classes\java\main started by sriva in D:\openfabric-test)
+14-05-2023 14:16:48.527 [main] INFO  ai.openfabric.api.Application.logStartupProfileInfo - The following 2 profiles are active: "base", "local"
+14-05-2023 14:16:50.365 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14-05-2023 14:16:50.506 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 126 ms. Found 2 JPA repository interfaces.
+14-05-2023 14:16:52.202 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+14-05-2023 14:16:52.221 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+14-05-2023 14:16:52.222 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+14-05-2023 14:16:52.222 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.68]
+14-05-2023 14:16:52.753 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+14-05-2023 14:16:52.754 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 4107 ms
+14-05-2023 14:16:53.473 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+14-05-2023 14:16:54.515 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+14-05-2023 14:16:54.862 [main] INFO  liquibase.database.log - Set default schema name to public
+14-05-2023 14:16:55.017 [main] INFO  liquibase.lockservice.log - Successfully acquired change log lock
+14-05-2023 14:16:55.917 [main] INFO  liquibase.changelog.log - Reading from public.databasechangelog
+14-05-2023 14:16:56.015 [main] INFO  liquibase.lockservice.log - Successfully released change log lock
+14-05-2023 14:16:56.237 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+14-05-2023 14:16:56.326 [main] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.6.12.Final
+14-05-2023 14:16:56.636 [main] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14-05-2023 14:16:56.867 [main] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+14-05-2023 14:16:58.068 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14-05-2023 14:16:58.084 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14-05-2023 14:16:58.140 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14-05-2023 14:17:07.819 [main] INFO  com.yahoo.elide.Elide.registerCustomSerde - Registering serde for type : class java.time.OffsetDateTime
+14-05-2023 14:17:07.821 [main] INFO  com.yahoo.elide.Elide.registerCustomSerde - Registering serde for type : class java.time.Instant
+14-05-2023 14:17:08.210 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration.getOrDeducePassword - 
+
+Using generated security password: 5a3d60dd-c0b8-41c3-b2b6-9a245820d1fd
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+14-05-2023 14:17:08.380 [main] INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4c78e00c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22b3b5d0, org.springframework.security.web.context.SecurityContextPersistenceFilter@74844216, org.springframework.security.web.header.HeaderWriterFilter@77e1dacd, org.springframework.web.filter.CorsFilter@77ab22be, org.springframework.security.web.authentication.logout.LogoutFilter@5feff876, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@fd0e118, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@96dfcbb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b506a79, org.springframework.security.web.session.SessionManagementFilter@71f4aeb6, org.springframework.security.web.access.ExceptionTranslationFilter@1f7fcec2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@39840986]
+14-05-2023 14:17:08.918 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+14-05-2023 14:17:09.043 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+14-05-2023 14:17:09.078 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+14-05-2023 14:17:09.632 [main] INFO  ai.openfabric.api.Application.logStarted - Started Application in 22.022 seconds (JVM running for 25.373)
+14-05-2023 14:18:42.317 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14-05-2023 14:18:42.318 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+14-05-2023 14:18:42.322 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 4 ms
+14-05-2023 14:23:54.230 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+14-05-2023 14:23:54.232 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+14-05-2023 14:23:54.246 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+15-05-2023 03:40:35.677 [main] INFO  m.p.s.DotenvPropertySource.addToEnvironment - Initializing Dotenv with DotenvConfig{directory=null, filename=null, ignoreIfMalformed=false, ignoreIfMissing=true, systemProperties=false, prefix=null}
+15-05-2023 03:40:35.812 [main] INFO  ai.openfabric.api.Application.logStarting - Starting Application using Java 1.8.0_202 on DESKTOP-71DI563 with PID 1408 (D:\openfabric-test\openfabric-api\build\classes\java\main started by sriva in D:\openfabric-test)
+15-05-2023 03:40:35.814 [main] INFO  ai.openfabric.api.Application.logStartupProfileInfo - The following 2 profiles are active: "base", "local"
+15-05-2023 03:40:38.751 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15-05-2023 03:40:38.990 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 206 ms. Found 2 JPA repository interfaces.
+15-05-2023 03:40:40.437 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+15-05-2023 03:40:40.455 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+15-05-2023 03:40:40.456 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+15-05-2023 03:40:40.456 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.68]
+15-05-2023 03:40:40.723 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+15-05-2023 03:40:40.724 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 4782 ms
+15-05-2023 03:40:41.355 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+15-05-2023 03:40:43.004 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+15-05-2023 03:40:44.096 [main] INFO  liquibase.database.log - Set default schema name to public
+15-05-2023 03:40:44.742 [main] INFO  liquibase.lockservice.log - Successfully acquired change log lock
+15-05-2023 03:40:47.155 [main] INFO  liquibase.changelog.log - Reading from public.databasechangelog
+15-05-2023 03:40:47.477 [main] INFO  liquibase.lockservice.log - Successfully released change log lock
+15-05-2023 03:40:48.910 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+15-05-2023 03:40:49.089 [main] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.6.12.Final
+15-05-2023 03:40:50.214 [main] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+15-05-2023 03:40:50.756 [main] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+15-05-2023 03:40:56.148 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+15-05-2023 03:40:56.243 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15-05-2023 03:40:56.588 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15-05-2023 03:40:59.583 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/sriva/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-webmvc/3.0.0/7ed22363fdfd651cd811c0b2391f16bddb91db8b/springfox-spring-webmvc-3.0.0.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'workerController' method 
+ai.openfabric.api.controller.WorkerController#stopContainer(String)
+to {POST [/api/v1/worker/containers/{containerId}/start]}: There is already 'workerController' bean method
+ai.openfabric.api.controller.WorkerController#startContainer(String) mapped.
+15-05-2023 03:40:59.589 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+15-05-2023 03:40:59.591 [main] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+15-05-2023 03:40:59.605 [main] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+15-05-2023 03:40:59.609 [main] INFO  o.a.catalina.core.StandardService.log - Stopping service [Tomcat]
+15-05-2023 03:40:59.639 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+15-05-2023 03:40:59.953 [main] ERROR o.s.boot.SpringApplication.reportFailure - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/sriva/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-webmvc/3.0.0/7ed22363fdfd651cd811c0b2391f16bddb91db8b/springfox-spring-webmvc-3.0.0.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'workerController' method 
+ai.openfabric.api.controller.WorkerController#stopContainer(String)
+to {POST [/api/v1/worker/containers/{containerId}/start]}: There is already 'workerController' bean method
+ai.openfabric.api.controller.WorkerController#startContainer(String) mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at ai.openfabric.api.Application.main(Application.java:13)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'workerController' method 
+ai.openfabric.api.controller.WorkerController#stopContainer(String)
+to {POST [/api/v1/worker/containers/{containerId}/start]}: There is already 'workerController' bean method
+ai.openfabric.api.controller.WorkerController#startContainer(String) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1609)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1462)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 19 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'workerController' method 
+ai.openfabric.api.controller.WorkerController#stopContainer(String)
+to {POST [/api/v1/worker/containers/{containerId}/start]}: There is already 'workerController' bean method
+ai.openfabric.api.controller.WorkerController#startContainer(String) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:669)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:635)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:332)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:420)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:76)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:299)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:297)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:266)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:225)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:213)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 33 common frames omitted
+15-05-2023 03:45:46.433 [main] INFO  m.p.s.DotenvPropertySource.addToEnvironment - Initializing Dotenv with DotenvConfig{directory=null, filename=null, ignoreIfMalformed=false, ignoreIfMissing=true, systemProperties=false, prefix=null}
+15-05-2023 03:45:46.480 [main] INFO  ai.openfabric.api.Application.logStarting - Starting Application using Java 1.8.0_202 on DESKTOP-71DI563 with PID 5216 (D:\openfabric-test\openfabric-api\build\classes\java\main started by sriva in D:\openfabric-test)
+15-05-2023 03:45:46.481 [main] INFO  ai.openfabric.api.Application.logStartupProfileInfo - The following 2 profiles are active: "base", "local"
+15-05-2023 03:45:48.362 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15-05-2023 03:45:48.478 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 101 ms. Found 2 JPA repository interfaces.
+15-05-2023 03:45:49.651 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+15-05-2023 03:45:49.666 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+15-05-2023 03:45:49.667 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+15-05-2023 03:45:49.668 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.68]
+15-05-2023 03:45:49.837 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+15-05-2023 03:45:49.838 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 3254 ms
+15-05-2023 03:45:50.206 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+15-05-2023 03:45:50.879 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+15-05-2023 03:45:51.118 [main] INFO  liquibase.database.log - Set default schema name to public
+15-05-2023 03:45:51.261 [main] INFO  liquibase.lockservice.log - Successfully acquired change log lock
+15-05-2023 03:45:52.001 [main] INFO  liquibase.changelog.log - Reading from public.databasechangelog
+15-05-2023 03:45:52.069 [main] INFO  liquibase.lockservice.log - Successfully released change log lock
+15-05-2023 03:45:52.287 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+15-05-2023 03:45:52.363 [main] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.6.12.Final
+15-05-2023 03:45:52.664 [main] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+15-05-2023 03:45:52.868 [main] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+15-05-2023 03:45:53.873 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+15-05-2023 03:45:53.891 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15-05-2023 03:45:53.961 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15-05-2023 03:45:55.264 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/sriva/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-webmvc/3.0.0/7ed22363fdfd651cd811c0b2391f16bddb91db8b/springfox-spring-webmvc-3.0.0.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'workerController' method 
+ai.openfabric.api.controller.WorkerController#stopDockerContainer(String)
+to {POST [/api/v1/worker/containers/{containerId}/start]}: There is already 'workerController' bean method
+ai.openfabric.api.controller.WorkerController#startDockerContainer(String) mapped.
+15-05-2023 03:45:55.267 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+15-05-2023 03:45:55.270 [main] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+15-05-2023 03:45:55.283 [main] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+15-05-2023 03:45:55.287 [main] INFO  o.a.catalina.core.StandardService.log - Stopping service [Tomcat]
+15-05-2023 03:45:55.319 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+15-05-2023 03:45:55.367 [main] ERROR o.s.boot.SpringApplication.reportFailure - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/sriva/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-webmvc/3.0.0/7ed22363fdfd651cd811c0b2391f16bddb91db8b/springfox-spring-webmvc-3.0.0.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'workerController' method 
+ai.openfabric.api.controller.WorkerController#stopDockerContainer(String)
+to {POST [/api/v1/worker/containers/{containerId}/start]}: There is already 'workerController' bean method
+ai.openfabric.api.controller.WorkerController#startDockerContainer(String) mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at ai.openfabric.api.Application.main(Application.java:13)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'workerController' method 
+ai.openfabric.api.controller.WorkerController#stopDockerContainer(String)
+to {POST [/api/v1/worker/containers/{containerId}/start]}: There is already 'workerController' bean method
+ai.openfabric.api.controller.WorkerController#startDockerContainer(String) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1609)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1462)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 19 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'workerController' method 
+ai.openfabric.api.controller.WorkerController#stopDockerContainer(String)
+to {POST [/api/v1/worker/containers/{containerId}/start]}: There is already 'workerController' bean method
+ai.openfabric.api.controller.WorkerController#startDockerContainer(String) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:669)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:635)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:332)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:420)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:76)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:299)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:297)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:266)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:225)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:213)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 33 common frames omitted
+15-05-2023 03:53:31.572 [main] INFO  m.p.s.DotenvPropertySource.addToEnvironment - Initializing Dotenv with DotenvConfig{directory=null, filename=null, ignoreIfMalformed=false, ignoreIfMissing=true, systemProperties=false, prefix=null}
+15-05-2023 03:53:31.612 [main] INFO  ai.openfabric.api.Application.logStarting - Starting Application using Java 1.8.0_202 on DESKTOP-71DI563 with PID 492 (D:\openfabric-test\openfabric-api\build\classes\java\main started by sriva in D:\openfabric-test)
+15-05-2023 03:53:31.613 [main] INFO  ai.openfabric.api.Application.logStartupProfileInfo - The following 2 profiles are active: "base", "local"
+15-05-2023 03:53:33.348 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15-05-2023 03:53:33.457 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 93 ms. Found 2 JPA repository interfaces.
+15-05-2023 03:53:34.633 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+15-05-2023 03:53:34.645 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+15-05-2023 03:53:34.646 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+15-05-2023 03:53:34.647 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.68]
+15-05-2023 03:53:34.844 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+15-05-2023 03:53:34.845 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 3130 ms
+15-05-2023 03:53:35.198 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+15-05-2023 03:53:35.892 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+15-05-2023 03:53:36.200 [main] INFO  liquibase.database.log - Set default schema name to public
+15-05-2023 03:53:36.371 [main] INFO  liquibase.lockservice.log - Successfully acquired change log lock
+15-05-2023 03:53:37.054 [main] INFO  liquibase.changelog.log - Reading from public.databasechangelog
+15-05-2023 03:53:37.126 [main] INFO  liquibase.lockservice.log - Successfully released change log lock
+15-05-2023 03:53:37.310 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+15-05-2023 03:53:37.390 [main] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.6.12.Final
+15-05-2023 03:53:37.672 [main] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+15-05-2023 03:53:37.889 [main] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+15-05-2023 03:53:38.920 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+15-05-2023 03:53:38.938 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15-05-2023 03:53:38.999 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15-05-2023 03:53:55.855 [main] INFO  com.yahoo.elide.Elide.registerCustomSerde - Registering serde for type : class java.time.Instant
+15-05-2023 03:53:55.857 [main] INFO  com.yahoo.elide.Elide.registerCustomSerde - Registering serde for type : class java.time.OffsetDateTime
+15-05-2023 03:53:56.146 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration.getOrDeducePassword - 
+
+Using generated security password: c18b70c0-b283-41b4-82db-a8fe9fea8a68
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+15-05-2023 03:53:56.296 [main] INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@74787609, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@36cdcae0, org.springframework.security.web.context.SecurityContextPersistenceFilter@4abdd5e, org.springframework.security.web.header.HeaderWriterFilter@13809363, org.springframework.web.filter.CorsFilter@462abec3, org.springframework.security.web.authentication.logout.LogoutFilter@2d23a5be, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7b9fea11, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54d46c8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@51fa09c7, org.springframework.security.web.session.SessionManagementFilter@49338f3, org.springframework.security.web.access.ExceptionTranslationFilter@17fb5184, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6148827c]
+15-05-2023 03:53:56.649 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+15-05-2023 03:53:56.743 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+15-05-2023 03:53:56.774 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+15-05-2023 03:53:57.133 [main] INFO  ai.openfabric.api.Application.logStarted - Started Application in 26.267 seconds (JVM running for 28.029)
+15-05-2023 03:54:12.251 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15-05-2023 03:54:12.251 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+15-05-2023 03:54:12.253 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 2 ms
+15-05-2023 03:54:31.368 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet].log - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at ai.openfabric.api.docker.DockerService.startContainer(DockerService.java:19)
+	at ai.openfabric.api.controller.WorkerController.startDockerContainer(WorkerController.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:111)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:337)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+15-05-2023 04:24:02.592 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+15-05-2023 04:24:02.640 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+15-05-2023 04:24:02.662 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+15-05-2023 04:27:51.095 [main] INFO  m.p.s.DotenvPropertySource.addToEnvironment - Initializing Dotenv with DotenvConfig{directory=null, filename=null, ignoreIfMalformed=false, ignoreIfMissing=true, systemProperties=false, prefix=null}
+15-05-2023 04:27:51.137 [main] INFO  ai.openfabric.api.Application.logStarting - Starting Application using Java 1.8.0_202 on DESKTOP-71DI563 with PID 7444 (D:\openfabric-test\openfabric-api\build\classes\java\main started by sriva in D:\openfabric-test)
+15-05-2023 04:27:51.139 [main] INFO  ai.openfabric.api.Application.logStartupProfileInfo - The following 2 profiles are active: "base", "local"
+15-05-2023 04:27:52.858 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15-05-2023 04:27:53.010 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 131 ms. Found 2 JPA repository interfaces.
+15-05-2023 04:27:54.232 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+15-05-2023 04:27:54.244 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+15-05-2023 04:27:54.246 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+15-05-2023 04:27:54.246 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.68]
+15-05-2023 04:27:54.399 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+15-05-2023 04:27:54.399 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 3153 ms
+15-05-2023 04:27:54.798 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+15-05-2023 04:27:55.617 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+15-05-2023 04:27:56.060 [main] INFO  liquibase.database.log - Set default schema name to public
+15-05-2023 04:27:56.210 [main] INFO  liquibase.lockservice.log - Successfully acquired change log lock
+15-05-2023 04:27:56.978 [main] INFO  liquibase.changelog.log - Reading from public.databasechangelog
+15-05-2023 04:27:57.107 [main] INFO  liquibase.lockservice.log - Successfully released change log lock
+15-05-2023 04:27:57.375 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+15-05-2023 04:27:57.525 [main] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.6.12.Final
+15-05-2023 04:27:57.978 [main] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+15-05-2023 04:27:58.180 [main] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+15-05-2023 04:27:59.319 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+15-05-2023 04:27:59.337 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15-05-2023 04:27:59.397 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15-05-2023 04:28:00.281 [main] WARN  c.g.d.core.DockerClientBuilder.build - 'dockerHttpClient' should be set.Falling back to Jersey, will be an error in future releases.
+15-05-2023 04:28:11.425 [main] INFO  com.yahoo.elide.Elide.registerCustomSerde - Registering serde for type : class java.time.OffsetDateTime
+15-05-2023 04:28:11.427 [main] INFO  com.yahoo.elide.Elide.registerCustomSerde - Registering serde for type : class java.time.Instant
+15-05-2023 04:28:11.801 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration.getOrDeducePassword - 
+
+Using generated security password: 750833b9-8266-4847-b0fc-4bf94ec6308a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+15-05-2023 04:28:11.959 [main] INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7bd7d71c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52963839, org.springframework.security.web.context.SecurityContextPersistenceFilter@4d3990a5, org.springframework.security.web.header.HeaderWriterFilter@2c7c898a, org.springframework.web.filter.CorsFilter@462abec3, org.springframework.security.web.authentication.logout.LogoutFilter@29431f61, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c459194, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1842dc39, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ce0bbd5, org.springframework.security.web.session.SessionManagementFilter@220cda54, org.springframework.security.web.access.ExceptionTranslationFilter@2cbc2db2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@363ba634]
+15-05-2023 04:28:12.305 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+15-05-2023 04:28:12.403 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+15-05-2023 04:28:12.434 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+15-05-2023 04:28:12.798 [main] INFO  ai.openfabric.api.Application.logStarted - Started Application in 22.396 seconds (JVM running for 24.156)
+15-05-2023 04:28:23.055 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+15-05-2023 04:28:23.061 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+15-05-2023 04:28:23.113 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+15-05-2023 04:49:15.749 [main] INFO  m.p.s.DotenvPropertySource.addToEnvironment - Initializing Dotenv with DotenvConfig{directory=null, filename=null, ignoreIfMalformed=false, ignoreIfMissing=true, systemProperties=false, prefix=null}
+15-05-2023 04:49:15.790 [main] INFO  ai.openfabric.api.Application.logStarting - Starting Application using Java 1.8.0_202 on DESKTOP-71DI563 with PID 11164 (D:\openfabric-test\openfabric-api\build\classes\java\main started by sriva in D:\openfabric-test)
+15-05-2023 04:49:15.791 [main] INFO  ai.openfabric.api.Application.logStartupProfileInfo - The following 2 profiles are active: "base", "local"
+15-05-2023 04:49:17.828 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15-05-2023 04:49:17.937 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 92 ms. Found 2 JPA repository interfaces.
+15-05-2023 04:49:19.140 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+15-05-2023 04:49:19.155 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+15-05-2023 04:49:19.156 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+15-05-2023 04:49:19.158 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.68]
+15-05-2023 04:49:19.313 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+15-05-2023 04:49:19.314 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 3422 ms
+15-05-2023 04:49:19.656 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+15-05-2023 04:49:20.327 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+15-05-2023 04:49:20.619 [main] INFO  liquibase.database.log - Set default schema name to public
+15-05-2023 04:49:20.767 [main] INFO  liquibase.lockservice.log - Successfully acquired change log lock
+15-05-2023 04:49:21.536 [main] INFO  liquibase.changelog.log - Reading from public.databasechangelog
+15-05-2023 04:49:21.608 [main] INFO  liquibase.lockservice.log - Successfully released change log lock
+15-05-2023 04:49:21.820 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+15-05-2023 04:49:21.904 [main] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.6.12.Final
+15-05-2023 04:49:22.201 [main] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+15-05-2023 04:49:22.392 [main] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+15-05-2023 04:49:23.427 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+15-05-2023 04:49:23.443 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15-05-2023 04:49:23.509 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15-05-2023 04:49:24.374 [main] WARN  c.g.d.core.DockerClientBuilder.build - 'dockerHttpClient' should be set.Falling back to Jersey, will be an error in future releases.
+15-05-2023 04:49:34.236 [main] INFO  com.yahoo.elide.Elide.registerCustomSerde - Registering serde for type : class java.time.Instant
+15-05-2023 04:49:34.237 [main] INFO  com.yahoo.elide.Elide.registerCustomSerde - Registering serde for type : class java.time.OffsetDateTime
+15-05-2023 04:49:34.529 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration.getOrDeducePassword - 
+
+Using generated security password: ec3ba100-75d7-4381-94eb-8d90e1a39dd9
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+15-05-2023 04:49:34.690 [main] INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@16361e61, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@51566ce0, org.springframework.security.web.context.SecurityContextPersistenceFilter@71d78cac, org.springframework.security.web.header.HeaderWriterFilter@23dc70c1, org.springframework.web.filter.CorsFilter@5626d18c, org.springframework.security.web.authentication.logout.LogoutFilter@5a4e492c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1842dc39, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@314c6f89, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1734b1a, org.springframework.security.web.session.SessionManagementFilter@6065bcb7, org.springframework.security.web.access.ExceptionTranslationFilter@3cae4518, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7c6ab057]
+15-05-2023 04:49:35.068 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+15-05-2023 04:49:35.168 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+15-05-2023 04:49:35.207 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+15-05-2023 04:49:35.570 [main] INFO  ai.openfabric.api.Application.logStarted - Started Application in 20.545 seconds (JVM running for 22.406)
+15-05-2023 04:49:40.963 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15-05-2023 04:49:40.963 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+15-05-2023 04:49:40.965 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 2 ms
+15-05-2023 04:50:52.435 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+15-05-2023 04:50:52.441 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+15-05-2023 04:50:52.458 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.

@@ -37,11 +37,18 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.7.5'
     implementation 'org.springframework.boot:spring-boot-starter-security:2.7.5'
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf:2.7.5'
+//    implementation 'com.github.tpiecora:dockerclient_2.11:0.4.0'
+//    implementation 'com.github.tpiecora:dockerclient_2.11:0.4.0'
     //-------
     compileOnly 'org.projectlombok:lombok:1.18.24'
     annotationProcessor 'org.projectlombok:lombok:1.18.24'
     // ------
     testImplementation 'org.springframework.boot:spring-boot-starter-test:2.7.5'
+    // -----
+    implementation 'com.github.docker-java:docker-java:3.2.10'
+
+//    implementation 'com.github.docker-java:docker-java-core'
+//    implementation 'com.github.docker-java:docker-java-transport-*'
 
     configurations {
         // get rid of hibernate-incompatible javassist
