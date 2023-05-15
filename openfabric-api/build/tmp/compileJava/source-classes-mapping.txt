@@ -1,7 +1,7 @@
 ai/openfabric/api/repository/WorkerRepository.java
  ai.openfabric.api.repository.WorkerRepository
-ai/openfabric/api/config/WebSecurityConfig.java
- ai.openfabric.api.config.WebSecurityConfig
+ai/openfabric/api/docker/DockerService.java
+ ai.openfabric.api.docker.DockerService
 ai/openfabric/api/config/SwaggerConfig.java
  ai.openfabric.api.config.SwaggerConfig
 ai/openfabric/api/Application.java
@@ -24,7 +24,7 @@ ai/openfabric/api/controller/WorkerStatisticsController.java
  ai.openfabric.api.controller.WorkerStatisticsController
 ai/openfabric/api/config/CorsConfig.java
  ai.openfabric.api.config.CorsConfig
-ai/openfabric/api/docker/DockerService.java
- ai.openfabric.api.docker.DockerService
+ai/openfabric/api/config/WebSecurityConfig.java
+ ai.openfabric.api.config.WebSecurityConfig
 ai/openfabric/api/controller/WorkerController.java
  ai.openfabric.api.controller.WorkerController

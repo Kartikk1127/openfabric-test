@@ -12,8 +12,8 @@ repositories {
 }
 
 dependencies {
-//    implementation 'com.github.tpiecora:dockerclient_2.11:0.4.0'
-//    implementation 'com.github.tpiecora:dockerclient_2.11:0.4.0'
+    implementation 'com.github.tpiecora:dockerclient_2.11:0.4.0'
+    implementation 'com.github.tpiecora:dockerclient_2.11:0.4.0'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
 
@@ -27,7 +27,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 //    implementation 'com.github.docker-java:docker-java-core'
 //    implementation 'com.github.docker-java:docker-java-transport-*'
-    implementation 'com.github.docker-java:docker-java:3.2.10'
+//    implementation 'com.github.docker-java:docker-java:3.2.10'
 
 
 

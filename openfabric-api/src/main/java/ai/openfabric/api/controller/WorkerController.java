@@ -23,6 +23,7 @@ public class WorkerController {
     public DockerService dockerService;
 
 
+    //just for test
     @PostMapping(path = "/hello")
     public @ResponseBody String hello(@RequestBody String name) {
         return "Hello!" + name;
